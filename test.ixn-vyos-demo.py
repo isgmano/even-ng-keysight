@@ -26,7 +26,7 @@ client.api.add_lab_network(lab_path, **mgmt_cloud)
 print("Create Nodes")
 nodes = [
     {"name": "Vyos-DUT", "template": "vyos", "image": "vyos-1.2.9-amd64", "left": 50, "top": 200},
-    {"name": "IxVMONE", "template": "ixvm", "image": "ixvm-vta-x10.40", "left": 500, "top": 200},
+    {"name": "IxVMONE", "template": "ixvm", "image": "ixvm-vta-x10.40", "ethernet": 3, "left": 500, "top": 200},
     {"name": "IxWebUI", "template": "ixweb", "image": "xweb-ixnwebui.10.40", "left": 500, "top": 50},
 ]
 
